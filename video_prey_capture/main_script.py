@@ -30,7 +30,7 @@ class SplitAndProcessVideos():
             filename = os.fsdecode(file)
             if filename.endswith('.avi'):
                 filenames_movies.append(filename)
-            elif filename.endswith('.csv'):
+            if filename.endswith('.csv'):
                 filenames_csv.append(filename)
         print(f'Movie filenames: {filenames_movies}')
         print(f'CSV filenames: {filenames_csv}')
